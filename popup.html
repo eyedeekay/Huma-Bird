@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+                      "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"
+>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Popup</title>
+    <script src="popup.js"></script>      
+    <link rel="stylesheet" href="home.css">
+  </head>
+  <body>
+    <div class="rendered-form">
+      <div class="formbuilder-text form-group field-i2pmail-username">
+          <label for="i2pmail-username" class="formbuilder-text-label">I2P Mail Login
+              <br><span class="formbuilder-required">*</span><span class="tooltip-element" tooltip="This is your mail.i2p username, without the @mail.i2p part">?</span></label>
+          <input type="text" placeholder="username" class="form-control" name="i2pmail-username" access="false" id="i2pmail-username" title="This is your mail.i2p username, without the @mail.i2p part" required="required" aria-required="true">
+      </div>
+      <div class="formbuilder-text form-group field-i2pmail-password">
+          <label for="i2pmail-password" class="formbuilder-text-label">I2P Mail Password
+              <br><span class="formbuilder-required">*</span><span class="tooltip-element" tooltip="The password for your I2P Mail account">?</span></label>
+          <input type="password" placeholder="password" class="form-control" name="i2pmail-password" access="false" id="i2pmail-password" title="The password for your I2P Mail account" required="required" aria-required="true">
+      </div>
+    </div>
+    <div class="description-area">
+      <h2>I2P Mail Configuration Helper</h2>
+      <p>This is a Thunderbird extension which reduces the steps required
+      to set up an I2P Mail account in Thunderbird. Make sure your I2P router
+      is started and that you've registered at <a href="http://hq.postman.i2p">Postman's HQ.</a>
+      </p>
+      <span class="fixed-label">POP Server:        </span><span><code>127.0.0.1:7659</code></span><br>
+      <span class="fixed-label">SMTP Server:       </span><span><code>127.0.0.1:7660</code></span><br>
+      <span class="fixed-label">Authentication:    </span><span><code>Username/Password</code></span>
+    </div>
+    <br><br>
+    <input id="button_ok" type="button" data="ok" value="Setup account">
+    <input id="button_cancel" type="button" data="cancel" value="Cancel Setup">
+  </body>
+</html>
