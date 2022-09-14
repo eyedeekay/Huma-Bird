@@ -31,8 +31,8 @@ async function blockingPopup() {
     let window = await messenger.windows.create({
         url: "popup.html",
         type: "popup",
-        height: 768,
-        width: 1024
+        height: 400,
+        width: 800
     });
     // await the created popup to be closed and define a default
     // return value if the window is closed without clicking a button
