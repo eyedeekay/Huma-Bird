@@ -14,6 +14,8 @@
         "default_title": "Add I2P Account"
     },
     "permissions": [
+        "accountsIdentities",
+        "accountsRead",
         "management"
     ],
     "manifest_version": 2
