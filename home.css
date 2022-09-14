@@ -388,3 +388,9 @@ video {
     display: inline-block;
     width: 49%;
 }
+
+#button_ok,
+#button_cancel {
+    width: 20vw;
+    height: 7vh;
+}
